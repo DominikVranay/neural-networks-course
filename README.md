@@ -41,7 +41,7 @@ Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cviče
 
 Celkové hodnotenie predmetu je 100 bodov (40 + 60 bodov); študent musí získať viac ako polovicu bodov aj zo zápočtu aj zo skúšky.
 
-Počas semestra odovzdá každý študent štyri zadania:
+Počas semestra odovzdá každý študent tri zadania:
 
 1. [prehľadový článok o možnostiach využitia neurónových sietí](assignments/assignment1.md) (18 b),
 2. [implementácia algoritmu backpropagation](assignments/assignment2.md) (14 b)
