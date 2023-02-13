@@ -33,7 +33,6 @@ Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cviče
 ## Odkazy na pomocné materiály <a name="links"></a>
 * [Návod na inštaláciu Pythonu](labs/lab00-getting-started.md)
 * [Java Neural Network Simulator](http://www.ra.cs.uni-tuebingen.de/software/JavaNNS/welcome_e.html?fbclid=IwAR3abC_9BxqT_dxwxxD5Qq8uzBY9sIUcnm2_d36JHIrx1k2i4Y1DBm-bVEA)
-* [Online Perceptron Training](https://www.cs.utexas.edu/~teammco/misc/perceptron/?fbclid=IwAR1qWNnD9VUoORzx5y0H7_lqo028lquC_B00CCsQelNAInh6GSelRM6YYTQ)
 * [Principles of training multi-layer neural network using backpropagation](http://home.agh.edu.pl/~vlsi/AI/backp_t_en/backprop.html)
 * [The Back Propagation Algorithm](lectures/The_Back_Propagation_Algorithm.pdf)
 
@@ -45,7 +44,7 @@ Počas semestra odovzdá každý študent tri zadania:
 
 1. [prehľadový článok o možnostiach využitia neurónových sietí](assignments/assignment1.md) (18 b),
 2. [implementácia algoritmu backpropagation](assignments/assignment2.md) (14 b)
-3. [trénovanie neurónovej siete pre klasifikáciu pomocou knižnice Keras](assignments/assignment3.md) (8 b).
+3. [trénovanie neurónovej siete pre klasifikáciu pomocou knižnice PyTorch](assignments/assignment3.md) (8 b).
 
 Otázky na skúšku nájdete [tu](exam/skuska_otazky.pdf). Podrobnejšie informácie k realizácii skúšky [sú dostupné tu](exam/exam_info.md).
 
