@@ -12,7 +12,7 @@ Informačný list predmetu je dostupný na [školskom portáli](https://maisport
 
 ## Plán prednášok a cvičení <a name="plan"></a>
 
-Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cvičenia sú v pondelok o 9:10 a o 10:50 v miestnosti PC17 v budove PK6 a o 15:55 v miestnosti 102 v budove V4. Účasť na cvičeniach je povinná, študent môže mať maximálne tri neúčasti za semester.
+Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cvičenia sú v pondelok o 9:10 a o 10:50 v miestnosti PC17 v budove PK6 a o 7:30 v miestnosti B520 v budove L9. Účasť na cvičeniach je povinná, študent môže mať maximálne tri neúčasti za semester.
 
 | Týždeň                       | Prednáška | Cvičenie                                                           | Zadania                  |
 |------------------------------|-----------|--------------------------------------------------------------------|--------------------------|
