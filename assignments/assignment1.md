@@ -1,10 +1,12 @@
 # Prehľadový článok o využití neurónových sietí
 
-Cieľom prvého zadania je napísať prehľadový článok o možnostiach využitia neurónových sietí v rôznych doménach. Články sa píšu v skupinách 2 alebo 3 študentov. Zadania sú zverejnené a pridelené v prvom týždni semestra, študentom je pridelená jedna z tém uvedených nižšie, alebo môžu si sami navrhnúť tému, ktorá ale musí byť schválená cvičiacím.
+Cieľom prvého zadania je napísať prehľadový článok o možnostiach využitia neurónových sietí v rôznych doménach. Články sa píšu v skupinách 3 alebo 4 študentov. Študentom je pridelená jedna z tém uvedených nižšie, alebo môžu si sami navrhnúť tému, ktorá ale musí byť schválená cvičiacím.
 
 Vypracovanie prehľadového článku v sebe zahŕňa rešerš vedeckých článkov kde sú prezentované aplikácie neurónových sietí v istej doméne. Práve preto pri hodnotení sa berie do úvahy kvalita použitých zdrojov, pričom prioritne by ste mali pracovať s vedeckými článkami alebo knihami. Vedecké publikácie nájdete napr. na [Google Scholar](https://scholar.google.com), [Science Direct](https://www.sciencedirect.com), [Web of Science](https://webofknowledge.com), [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp).
 
-Pri písaní článku použite [šablónu dostupnú tu](sablona-na-clanok-ZNS-KKUI.zip). Alternatívne môžete použiť [IEEE šablónu pre vedecké práce](https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/ieee-article-templates/templates-for-computer-society-publications/). Rozsah článku je medzi 8 a 12 strán (4 a 6 v IEEE šablóne). Svoje články napíšte v LaTeXu, za použitie anglického jazyka môžete získať bonusové body.
+Pri písaní článku použite [šablónu dostupnú tu](sablona-na-clanok-ZNS-KKUI.zip). Alternatívne môžete použiť [IEEE šablónu pre vedecké práce](https://journals.ieeeauthorcenter.ieee.org/create-your-ieee-journal-article/authoring-tools-and-templates/ieee-article-templates/templates-for-computer-society-publications/). Rozsah článku je medzi 8 a 12 strán (4 a 6 v IEEE šablóne). Svoje články napíšte v LaTeXu v slovenskom alebo anglickom jazyku.
+
+Obhajoba článku bude prebiehať formou konferencie na konci semestra.
 
 Odporúčaná štruktúra článku:
 
@@ -43,10 +45,10 @@ Odporúčaná štruktúra článku:
 20. Využitie neurónových sietí v športovej analýze
 
 ## Deadline a odovzdávka
-Deadline odovzdania je 21. 3. 2021. Súčasťou odovzdávky je aj prezentácia, ktorú odprezentujete na cvičeniach v 7. týždni. Zadania nahrajte cez MS Teams alebo zdielaním LaTeX projektu na [Overleaf](https://www.overleaf.com). Ak článok nahrávate na MS Teams, odovzdávka musí obsahovať PDF súbor článku aj zazipovaný LaTeX projekt.
+Predbežný deadline odovzdania je 7. 5. 2023. Súčasťou odovzdávky je aj prezentácia, ktorú odprezentujete na konferencii koncom semestra. Zadania nahrajte cez MS Teams alebo zdielaním LaTeX projektu na [Overleaf](https://www.overleaf.com). Ak článok nahrávate na MS Teams, odovzdávka musí obsahovať PDF súbor článku aj zazipovaný LaTeX projekt.
 
 ## Hodnotenie
-Za článok môžete získať maximálne 15 bodov, z toho 5 bodov dostanete za prezentáciu a obhajobu v 7. týždni. Ďalšie body sa udeľujú nasledovne:
+Za článok môžete získať maximálne 18 bodov, z toho 8 bodov dostanete za prezentáciu a obhajobu. Ďalšie body sa udeľujú nasledovne:
 
 * prehľad výskumu v doméne – 3 body
 * popis vybraného riešenia – 2 body
