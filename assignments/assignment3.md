@@ -13,9 +13,9 @@ Pri riešení zadania postupujte nasledovne:
 6. Výsledky experimentov spíšte do reportu – jedna strana A4, pre všetky nastavenia uveďte hodnoty parametrov a presnosť, pre najlepšiu topológiu a parametre aj konfúznu maticu.
 
 ## Deadline a odovzdávka
-Vaše riešenia odovzdajte najneskôr do 9. 5. 2021 cez MS Teams. Riešenie následne musíte obhájiť online (budú na to vyhradené cvičenia v 12. a 13. týždni). Odovzdávate ZIP súbor, ktorý musí obsahovať všetky Python skripty. Riešenie musí byť out-of-the-box, t.j. spustiteľné bez konfigurácie a zmien kódu.
+Vaše riešenia odovzdajte najneskôr do 7. 5. 2023 cez MS Teams. Riešenie následne musíte obhájiť online (budú na to vyhradené cvičenia v 12. a 13. týždni). Odovzdávate ZIP súbor, ktorý musí obsahovať všetky Python skripty. Riešenie musí byť out-of-the-box, t.j. spustiteľné bez konfigurácie a zmien kódu.
 
 ## Hodnotenie
-Za zadanie môžete získať maximálne 5 bodov, po 1 bod za úlohy 1 až 5.
+Za zadanie môžete získať maximálne 8 bodov, po 1 bod za úlohy 1 až 5 a 3 za obhajobu.
 
 **Pozor: pre získanie bodov musíte odovzdať aj report!**
