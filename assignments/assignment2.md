@@ -17,7 +17,7 @@ Vaše riešenie sa skladá z troch častí:
 Vaše riešenia odovzdajte do 16. 4. 2023 cez MS Teams. Odovzdávate ZIP súbor, ktorý musí obsahovať použitý dataset a Python skript (ak máte viac skriptov, vytvorte súbor `main.py`, ktorý obsahuje hlavnú funkciu). Riešenie musí byť out-of-the-box, t.j. spustiteľné bez konfigurácie a zmien kódu.
 
 ## Hodnotenie
-Za zadanie môžete získať maximálne 10 bodov, ktoré sa udeľujú nasledovne:
+Za zadanie môžete získať maximálne 14 bodov, ktoré sa udeľujú nasledovne:
 
 * implementácia algoritmu backpropagation – 6 bodov
 * aplikácia backpropu v neurónovej sieti – 4 body
