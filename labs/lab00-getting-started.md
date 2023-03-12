@@ -48,7 +48,7 @@ pip install scipy --upgrade
 pip install sklearn --upgrade
 ```
 
-## Krok 2: Inštalácia TensorFlow a Keras
+## Krok 2a: Inštalácia TensorFlow a Keras
 TensorFlow a Keras ako aj ďalšie knižnice nainštalujete pomocou `pip`. Do príkazového riadku Anacondy (uistite sa že vaše virtuálne prostredie je aktivované) zadajte príkazy:
 
 ```
@@ -58,12 +58,22 @@ pip install keras
 
 Knižnice `TensorFlow` a `Keras` sa nainštalujú automaticky spolu s potrebnými závislosťami. V prípade problémov sa obráťte na stránky [TensorFlow](https://www.tensorflow.org/install/pip) a [Keras](https://keras.io/#installation).
 
+## Krok 2b: Inštalácia PyTorch
+Pytorch ako aj ďalšie knižnice nainštalujete pomocou `pip`. Do príkazového riadku Anacondy (uistite sa že vaše virtuálne prostredie je aktivované) zadajte príkazy:
+
+```
+pip install torch torchvision torchaudio
+```
+
+Knižnica `PyTorch` sa nainštalujú automaticky spolu s potrebnými závislosťami. V prípade problémov, alebo nainstalovania verzie pre GPU sa obráťte na stránku [PyTorch](https://pytorch.org/get-started/locally/)).
+
 ## Krok 3: Skontrolujte si inštaláciu
 V príkazovom riadku Anacondy spusťte Python zadaním príkazu `python` (alebo názov podľa bodu 1.3) a následne skúsťte naimportovať nainštalované knižnice:
 
 ```
 import tensorflow
 import keras
+import torch
 ```
 
 Prvý import môže potrvať niekoľko sekúnd. Ak počas importu sa vyskytnú problémy s niektorou knižnicou, potrebujete si ju aktualizovať podľa príkazov uvedených v bode 1.4.
