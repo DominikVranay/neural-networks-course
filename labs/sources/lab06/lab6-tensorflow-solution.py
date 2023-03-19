@@ -1,20 +1,20 @@
-import tensorflow as tf
+import torch
 
 # create the nodes in the graph, and initialize values
-a = tf.constant(13, name="a")
-b = tf.constant(37, name="b")
+a = torch.tensor(13)
+b = torch.tensor(37)
 
 # add together the two values
-c = tf.add(a, b, name="c")
+c = torch.add(a, b)
 print(c)
 
 # create the nodes in the graph, and initialize values
-a = tf.constant(2.5, name="a")
-b = tf.constant(6.5, name="b")
+a = torch.tensor(2.5)
+b = torch.tensor(6.5)
 
-c = tf.add(a, b, name="c")
-d = tf.subtract(b, 1, name="d")
-e = tf.multiply(c, d, name="e")
+c = torch.add(a, b)
+d = torch.subtract(b, 1)
+e = torch.multiply(c, d)
 
 print(e)
 
@@ -22,21 +22,21 @@ print(e)
 # simple perceptron with two input nodes
 def my_perceptron(x):
     # define some arbitrary weights for the two input values
-    W = tf.constant([[3, -2]], shape=(1, 2), dtype=tf.float32)
+    W = torch.tensor([[3, -2]], dtype=torch.float32)
 
     # define the bias of the perceptron
     b = 1
 
-    # compute weighted sum (hint: check out tf.matmul)
-    z = tf.matmul(x, W, transpose_b=True) + b
+    # compute weighted sum (hint: check out torch.matmul)
+    z = totch.matmul(x, W.T) + b
 
-    # apply the sigmoid activation function (hint: use tf.sigmoid)
-    output = tf.sigmoid(z)
+    # apply the sigmoid activation function (hint: use torch.sigmoid)
+    output = torch.sigmoid(z)
 
     return output
 
 
-sample_input = tf.constant([[-1, 2]], shape=(1, 2), dtype=tf.float32)
+sample_input = torch.tensor([[-1, 2]], dtype=torch.float32)
 
 # this should give you a tensor with value 0.002
 result = my_perceptron(sample_input)
@@ -50,17 +50,17 @@ def my_dense_layer(x, n_in, n_out):
     # define variable weights as a matrix and biases
     # initialize weights for one
     # initialize biases for zero
-    W = tf.Variable(tf.ones((n_in, n_out)))
-    b = tf.Variable(tf.zeros((1, n_out)))
+    W = torch.ones((n_in, n_out), requires_grad=True)
+    b = torch.zeros((1, n_out), requires_grad=True)
 
-    # compute weighted sum (hint: check out tf.matmul)
-    z = tf.matmul(x, W) + b
+    # compute weighted sum (hint: check out torch.matmul)
+    z = torch.matmul(x, W) + b
 
-    # apply the sigmoid activation function (hint: use tf.sigmoid)
-    output = tf.sigmoid(z)
+    # apply the sigmoid activation function (hint: use torch.sigmoid)
+    output = torch.sigmoid(z)
 
     return output
 
 
-sample_input = tf.constant([[1, 2.]], shape=(1, 2))
+sample_input = torch.tensor([[1, 2.]])
 print(my_dense_layer(sample_input, n_in=2, n_out=3))
