@@ -22,11 +22,11 @@ Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cviče
 | Týždeň 4<br>6. 3. - 12. 3.   | Wienerove filtre, metóda najstrmšieho zostupu, metóda najmenšej kvadratickej chyby, Adaline, delta pravidlo | [odvodenie backpropagation algoritmu](https://brilliant.org/wiki/backpropagation/)<br>[príklad](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/)        | [zverejnenie zadania 2](assignments/assignment2.md) |
 | Týždeň 5<br>13. 3. - 19. 3.  | Metóda spätného šírenia chyby (backpropagation), BP cez čas, metódy urýchlenia konvergencie BP, funkcionálne linky, RBF siete, metóda kaskádnej korelácie BP | [predspracovanie údajov, metodológia trénovania NS, vyhodnotenie NS](labs/lab05-training-methodology.ipynb) |      |
 | Týždeň 6<br>20. 3. - 26. 3.  | Dôležité poznámky k návrhu NS | [NS v PyTorch](labs/lab06-tensorflow-and-keras.ipynb)                |                          |
-| Týždeň 7<br>27. 3. - 2. 4.   | Nekontrolované učenie na FF NS, konkurenčné učenie, MAXNET, Kohonenove siete, Ojove adaptačné pravidlo | prezentácia článkov                                                | [zverejnenie zadania 3](assignments/assignment3.md)    |
-| Týždeň 8<br>3. 4. - 9. 4.   | Autoenkódery a Generatívne siete | [nekontrolované učenie](labs/lab08-unsupervised-learning.ipynb)        |                          |
+| Týždeň 7<br>27. 3. - 2. 4.   | Nekontrolované učenie na FF NS, konkurenčné učenie, MAXNET, Kohonenove siete, Ojove adaptačné pravidlo | [nekontrolované učenie](labs/lab08-unsupervised-learning.ipynb)                        | [zverejnenie zadania 3](assignments/assignment3.md)    |
+| Týždeň 8<br>3. 4. - 9. 4.   | Autoenkódery a Generatívne siete |   [autoenkódery](labs/lab09-autoencoders.ipynb)      |                          |
 | Týždeň 9<br>10. 4. - 16. 4.  | Hybridné metódy učenia na FF NS, counterpropagation, time-delay vstupy na FF NS, rekurentné NS, Hopfieldova NS |  Veľká Noc | odovzdávka zadania 2       |
-| Týždeň 10<br>17. 4. - 23. 4. | Kontrolované učenie na RC NS, BP na RC NS, Jordanove a Elmanove siete | [autoenkódery](labs/lab09-autoencoders.ipynb)  ||
-| Týždeň 11<br>24. 4. - 30. 4.  | Nekontrolované učenie na RC NS, ART NS | [Hebbovo učenie](labs/lab10-hebbian-learning.ipynb) |                          |
+| Týždeň 10<br>17. 4. - 23. 4. | Kontrolované učenie na RC NS, BP na RC NS, Jordanove a Elmanove siete | [Hebbovo učenie](labs/lab10-hebbian-learning.ipynb)  ||
+| Týždeň 11<br>24. 4. - 30. 4.  | Nekontrolované učenie na RC NS, ART NS | Generativne siete alebo vas navrh |                          |
 | Týždeň 12<br>1. 5. - 7. 5.  | Hybridné prístupy k učeniu, učenie na základe stavu systému | odovzdanie zadania 3                                          | odovzdávka zadania 3 |
 | Týždeň 13<br>8. 5. - 14. 5. | Modulárne NS, základné princípy multiagentových systémov | zápočtový týždeň                                                   |                          |
 
