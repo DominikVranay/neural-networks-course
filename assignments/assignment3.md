@@ -10,7 +10,7 @@ Pri riešení zadania postupujte nasledovne:
 3. **testovanie neurónových sietí s rôznymi optimalizátormi** – pre topológiu s najvyššou presnosťou vyskúšajte rôzne optimalizátory z knižnice PyTorch (*minimálne 3*).
 4. **testovanie neurónových sietí s rôznymi učiacimi parametermi** – pre topológiu a optimalizátor s najvyššou presnosťou vyskúšajte rôzne učiace parametre (learning rate; *minimálne 5*).
 5. **testovanie neurónových sietí s rôznymi aktivačnými funkciami** – pre topológiu, optimalizátor a učiaci parameter s najvyššou presnosťou vyskúšajte rôzne aktivačné funkcie (*minimálne 3*).
-6. Výsledky experimentov spíšte do reportu – jedna strana A4, pre všetky nastavenia uveďte hodnoty parametrov a presnosť, pre najlepšiu topológiu a parametre aj konfúznu maticu.
+6. Výsledky experimentov spíšte do reportu – 1-2 strany A4, pre všetky nastavenia uveďte hodnoty parametrov a presnosť, pre najlepšiu topológiu a parametre aj konfúznu maticu.
 
 ## Deadline a odovzdávka
 Vaše riešenia odovzdajte najneskôr do 7. 5. 2023 cez MS Teams. Riešenie následne musíte obhájiť online (budú na to vyhradené cvičenia v 12. a 13. týždni). Odovzdávate ZIP súbor, ktorý musí obsahovať všetky Python skripty. Riešenie musí byť out-of-the-box, t.j. spustiteľné bez konfigurácie a zmien kódu.
