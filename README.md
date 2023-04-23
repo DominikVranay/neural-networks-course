@@ -26,7 +26,7 @@ Prednáška z predmetu je v utorok o 13:30 v miestnosti ZP1 v budove BN9. Cviče
 | Týždeň 8<br>3. 4. - 9. 4.   | Autoenkódery a Generatívne siete |   [autoenkódery](labs/lab09-autoencoders.ipynb)      |                          |
 | Týždeň 9<br>10. 4. - 16. 4.  | Hybridné metódy učenia na FF NS, counterpropagation, time-delay vstupy na FF NS, rekurentné NS, Hopfieldova NS |  Veľká Noc | odovzdávka zadania 2       |
 | Týždeň 10<br>17. 4. - 23. 4. | Kontrolované učenie na RC NS, BP na RC NS, Jordanove a Elmanove siete | [Hebbovo učenie](labs/lab10-hebbian-learning.ipynb)  ||
-| Týždeň 11<br>24. 4. - 30. 4.  | Nekontrolované učenie na RC NS, ART NS | Generativne siete alebo vas navrh |                          |
+| Týždeň 11<br>24. 4. - 30. 4.  | Nekontrolované učenie na RC NS, ART NS | [Generativne siete](labs/lab11-generative-networks.ipynb) |                          |
 | Týždeň 12<br>1. 5. - 7. 5.  | Hybridné prístupy k učeniu, učenie na základe stavu systému | odovzdanie zadania 3                                          | odovzdávka zadania 3 |
 | Týždeň 13<br>8. 5. - 14. 5. | Modulárne NS, základné princípy multiagentových systémov | zápočtový týždeň                                                   |                          |
 
