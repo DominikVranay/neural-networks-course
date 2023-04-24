@@ -7,10 +7,11 @@ import torch.nn.functional as F
 transform = torchvision.transforms.Compose([
     torchvision.transforms.ToTensor(),
     torchvision.transforms.Normalize(mean=(0.5), std=(0.5))])
-trainset = torchvision.datasets.MNIST('/files/', train=True, download=True, transform=transform)
-trainset2 = torchvision.datasets.MNIST('/files/', train=True, download=True, transform=torchvision.transforms.ToTensor())
+trainset = torchvision.datasets.MNIST('/files/', train=True, download=True, transform=torchvision.transforms.ToTensor())
+trainset2 = torchvision.datasets.MNIST('/files/', train=True, download=True, transform=transform)
 trainloader = torch.utils.data.DataLoader(trainset, batch_size=256, shuffle=True)
 trainloader2 = torch.utils.data.DataLoader(trainset2, batch_size=128, shuffle=True)
+device = ("cuda:0" if torch.cuda.is_available() else "cpu")
 
 class Encoder(nn.Module):
     '''
@@ -51,28 +52,29 @@ class Decoder(nn.Module):
         
 # Sampling function (using the reparameterisation trick)
 def sample(mu, log_sigma2):
-    eps = torch.randn(mu.shape[0], mu.shape[1])
+    eps = torch.randn(mu.shape[0], mu.shape[1]).to(device)
     return mu + torch.exp(log_sigma2 / 2) * eps
 
 
 #parameters
-embedding_dim = 12
+embedding_dim = 2
 enc_hidden_units = 512
 dec_hidden_units = 512
 image_dim = 28**2
-nEpoch = 10
+nEpoch = 5
 
 # construct the encoder, decoder and optimiser
-enc = Encoder(image_dim, enc_hidden_units, embedding_dim)
-dec = Decoder(embedding_dim, dec_hidden_units, image_dim)
+enc = Encoder(image_dim, enc_hidden_units, embedding_dim).to(device)
+dec = Decoder(embedding_dim, dec_hidden_units, image_dim).to(device)
 optimizer = torch.optim.Adam(list(enc.parameters())+ list(dec.parameters()), lr=1e-3)
+criterion = torch.nn.BCELoss().to(device)
 
 # training loop
 for epoch in range(nEpoch):
-    losses = []
+    losses = 0
     for inputs, _ in trainloader:
         optimizer.zero_grad()
-        inputs = inputs.view(-1, 28**2)
+        inputs = inputs.view(-1, 28**2).to(device)
 
         mu, log_sigma2 = enc(inputs)
         z = sample(mu, log_sigma2)
@@ -82,19 +84,19 @@ for epoch in range(nEpoch):
         # we need to be a little careful - by default torch averages over every observation 
         # (e.g. each  pixel in each image of each batch), whereas we want the average over entire
         # images instead
-        recon = F.binary_cross_entropy(outputs, inputs, reduction='sum') / inputs.shape[0]
+        recon = criterion(outputs, inputs)
         
         loss = recon
         loss.backward()
         optimizer.step()
 
         # keep track of the loss and update the stats
-        losses.append(loss.item())
+        losses += loss.item()
 
-    print("Epoch: ", epoch)
-    for i in range(8):
-        plt.subplot(241+i)
-        a = torch.reshape(testset.data[i].type(torch.FloatTensor), (1, 784))
+    print("Epoch: ", epoch, "Loss: ", losses/len(trainloader))
+    for i in range(4):
+        plt.subplot(141+i)
+        a = torch.reshape(trainset.data[i].type(torch.FloatTensor), (1, 784)).to(device)
         mu, log_sigma2 = enc(a)
         z = sample(mu, log_sigma2)
         outputs = dec(z)
@@ -103,6 +105,20 @@ for epoch in range(nEpoch):
 
     # show the plot
     plt.show()
+    
+sigma = 20
+log_sigma2 = torch.tensor([[torch.log(torch.tensor(sigma**2)), torch.log(torch.tensor(sigma**2))]]).to(device)
+img = torch.ByteTensor(588, 588)
+for i in range(21):
+    for j in range(21):
+        mu = torch.tensor([[(-4+i*0.4)*sigma, (4-j*0.4)*sigma]]).to(device)
+        z = sample(mu, log_sigma2)
+        outputs = dec(z)
+        outputs = torch.reshape(outputs, (28, 28)).type(torch.ByteTensor)
+        img[28*j:28*(j+1), 28*i:28*(i+1)] = outputs
+plt.imshow(img, cmap=plt.get_cmap('gray'))
+    # show the plot
+plt.show()
  
 class Discriminator(nn.Module):
     '''
